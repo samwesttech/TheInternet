@@ -1,0 +1,33 @@
+.add_article {
+  display: inline-block;
+  font-family: "Bahiana", cursive;
+  font-size: 2rem;
+  width: 350px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+}
+
+.add_article button {
+  font-family: "Bahiana", cursive;
+  font-size: 1.5rem;
+  background-color: #1680f2;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px auto;
+  padding: 16px 32px;
+}
+
+.add_article button:hover {
+  opacity: 1;
+}

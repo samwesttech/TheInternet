@@ -1,0 +1,170 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sort_by {
+  font-family: "Bahiana", cursive;
+  font-size: 2rem;
+  width: 200px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+}
+
+#sort_by {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.add_button {
+  background-color: #1680f2;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 16px 32px;
+  font-family: "Bahiana", cursive;
+  font-size: 1.5rem;
+}
+
+.add_button:hover {
+  opacity: 1;
+}
+
+/* ARTICLE */
+.card_article {
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card_article img {
+  height: 70px;
+  width: auto;
+}
+
+.card_article h2 {
+  height: 100px;
+  font-size: 2.1rem;
+  margin: auto;
+  text-align: center;
+  font-family: "Bahiana", cursive;
+}
+.card_article p {
+  font-size: 0.8rem;
+  height: 100px;
+}
+
+#author {
+  font-size: 0.9rem;
+  height: 20px;
+}
+
+.card_article span {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.card_article:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 550px) {
+  .card_article {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+
+  .sort_by {
+    font-family: "Bahiana", cursive;
+    font-size: 1rem;
+    width: 150px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+      -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  }
+
+  .card_article h2 {
+    font-size: 1.6rem;
+    height: auto;
+  }
+
+  .card_article p {
+    font-size: 0.7rem;
+    height: 120px;
+  }
+
+  .card_article span {
+    padding: 0px 10px;
+    font-size: 0.9rem;
+  }
+
+  .card_article img {
+    height: 50px;
+    width: auto;
+  }
+  #author {
+    font-size: 0.8rem;
+    margin: 10px;
+    height: 20px;
+  }
+}
+
+/* ARROWS */
+.arrow_button {
+  background-color: #ffffff;
+  margin: 30px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 5rem;
+}
+
+.arrow_button:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 500px) {
+  .card_article {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+
+  .arrow_button {
+    transform: scale(0.5, 0.5);
+  }
+
+  .arrow_button:hover {
+    transform: scale(0.4, 0.4);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+      -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+  }
+}
