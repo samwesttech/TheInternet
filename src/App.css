@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .App {
@@ -19,14 +20,15 @@ li {
 }
 
 .loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   z-index: 1;
   width: 120px;
   height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid #a7c9ee; /* Light Blue */
+  margin: 50% auto;
+  padding: auto;
+  border: 16px solid white; /* Light Blue */
   border-radius: 50%;
   border-top: 16px solid #1680f2; /* Blue */
   animation: spin 2s linear infinite;

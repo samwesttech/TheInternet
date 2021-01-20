@@ -16,7 +16,6 @@ body {
 }
 
 .article h2 {
-  font-family: "Bahiana", cursive;
   font-size: 4rem;
   margin: 10px;
 }
@@ -27,7 +26,6 @@ body {
 }
 
 .article h4 {
-  font-family: "Bahiana", cursive;
   font-size: 3.5rem;
   margin: 60px 0px 0px 0px;
   display: flex;
@@ -35,13 +33,11 @@ body {
 }
 
 .article h5 {
-  font-family: "Bahiana", cursive;
   font-size: 2.5rem;
   margin: 20px auto;
 }
 
 .add_comment {
-  font-family: "Bahiana", cursive;
   font-size: 2rem;
   margin: 30px auto;
   padding: 0px 50px;
@@ -57,7 +53,6 @@ body {
 .add_comment button {
   background-color: #1680f2;
   border: none;
-  font-family: "Bahiana", cursive;
   font-size: 1.5rem;
   border-radius: 40px;
   color: white;
@@ -123,7 +118,6 @@ body {
   border-radius: 40px;
   color: white;
   text-align: center;
-  font-family: "Bahiana", cursive;
   font-size: 1.5rem;
   opacity: 0.6;
   transition: 0.3s;

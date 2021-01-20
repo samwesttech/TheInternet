@@ -10,6 +10,7 @@ const Home = () => {
         <h1>The Internet</h1>
         <img src={logo} alt="moose" />
         <h2>Click to Enter!</h2>
+        <br></br>
       </div>
     </Link>
   );
