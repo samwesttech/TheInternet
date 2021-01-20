@@ -1,3 +1,7 @@
+/* font-family: "Raleway", sans-serif; */
+
+/* font-family: 'Open Sans', sans-serif; */
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -26,7 +30,7 @@ li {
   z-index: 1;
   width: 120px;
   height: 120px;
-  margin: 50% auto;
+  margin: 20% auto;
   padding: auto;
   border: 16px solid white; /* Light Blue */
   border-radius: 50%;
