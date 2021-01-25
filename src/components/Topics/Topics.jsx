@@ -46,7 +46,11 @@ class Topics extends React.Component {
   render() {
     const { isLoading, hasError, errorMessage } = this.state;
     if (isLoading) {
-      return <p className="loader" />;
+      return (
+        <div className="err404">
+          <i class="far fa-question-circle fa-spin"></i>
+        </div>
+      );
     }
     const { topics } = this.state;
     if (hasError) {
@@ -69,7 +73,7 @@ class Topics extends React.Component {
                 >
                   <li key={topic.slug} className="card_topics">
                     <img src={this.choseImage(topic)} alt="topic icon" />
-                    <br></br>
+                    <h1>{topic.slug}</h1>
                     <p>{topic.description}</p>
                   </li>
                 </Link>

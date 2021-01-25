@@ -35,19 +35,11 @@ class AddArticle extends Component {
     return (
       <div className="add_article">
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="username">username:</label>
+          <label htmlFor="username">Username:</label>
           <br></br>
           {user}
           <br></br>
-          <label htmlFor="body">body:</label>
-          <br></br>
-          <textarea
-            name="body"
-            id="body"
-            onChange={this.handleChange}
-          ></textarea>
-          <br></br>
-          <label htmlFor="title">title:</label>
+          <label htmlFor="title">Question:</label>
           <br></br>
           <textarea
             name="title"
@@ -55,7 +47,15 @@ class AddArticle extends Component {
             onChange={this.handleChange}
           ></textarea>
           <br></br>
-          <label htmlFor="topic">topic:</label>
+          <label htmlFor="body">Body:</label>
+          <br></br>
+          <textarea
+            name="body"
+            id="body"
+            onChange={this.handleChange}
+          ></textarea>
+          <br></br>
+          <label htmlFor="topic">Topic:</label>
           <br></br>
           <select name="topic" id="topic" onChange={this.handleChange}>
             <option value="">Choose Topic</option>

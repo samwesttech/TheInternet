@@ -55,11 +55,11 @@ class AddComment extends Component {
           onSubmit={this.handleSubmit}
           disabled={hasCommented}
         >
-          <label htmlFor="username">username:</label>
+          <label htmlFor="username">Username:</label>
           <br></br>
           {user}
           <br></br>
-          <label htmlFor="body">body:</label>
+          <label htmlFor="body">Body:</label>
           <br></br>
           <textarea
             name="body"

@@ -10,7 +10,7 @@ import DeleteComment from "../DeleteComment";
 import footballIcon from "../../assets/football.png";
 import cookingIcon from "../../assets/cooking.jpg";
 import codingIcon from "../../assets/coding.png";
-import profile from "../../assets/profile.png";
+import profile from "../../assets/logo.png";
 
 class Article extends React.Component {
   state = {
@@ -81,7 +81,11 @@ class Article extends React.Component {
   render() {
     const { isLoading, article, comments, hasError, errorMessage } = this.state;
     if (isLoading) {
-      return <p className="loader" />;
+      return (
+        <div className="err404">
+          <i class="far fa-question-circle fa-spin"></i>
+        </div>
+      );
     }
     if (hasError) {
       return <ErrorMessage errorMessage={errorMessage} />;
@@ -96,7 +100,7 @@ class Article extends React.Component {
           <br></br>
           <VoteArticles article_id={article.article_id} votes={article.votes} />
           <br></br>
-          <h4>Comments</h4>
+          <h4>Comments 💬</h4>
           <div className="add_comment">
             <h5>Add Comment</h5>
             <AddComment
@@ -114,9 +118,12 @@ class Article extends React.Component {
                     alt="user profile pic"
                     className="profile_pic"
                   />
-                  <p className="author">{comment.author}</p>
+                  <p className="author">✍️ {comment.author}</p>
+                  <br></br>
                   <p className="body">{comment.body}</p>
+                  <br></br>
                   <p className="created">
+                    📅
                     {`${comment.created_at.slice(
                       0,
                       10

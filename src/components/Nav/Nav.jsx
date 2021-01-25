@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Nav.css";
-import theInternetLogo from "../../assets/theinternetlogo.png";
+import Logo from "../../assets/logo.png";
 import { Link } from "@reach/router";
 
 class Nav extends Component {
@@ -13,7 +13,8 @@ class Nav extends Component {
     return (
       <div className="header">
         <Link to="/">
-          <img src={theInternetLogo} alt="the internet logo" className="logo" />
+          <img src={Logo} alt="the internet logo" className="logo" />
+          <h1>Home</h1>
         </Link>
 
         <div className="header-right">
@@ -30,8 +31,8 @@ class Nav extends Component {
             <option value="weegembump">weegembump</option>
             <option value="jessjelly">jessjelly</option>
           </select>
-          <Link to="/">
-            <h1>Home</h1>
+          <Link to="/articles/add_article">
+            <h1>Ask A Question</h1>
           </Link>
           <Link to="/articles">
             <h1>Articles</h1>

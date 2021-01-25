@@ -1,50 +1,46 @@
 .sort_by {
   font-size: 2rem;
-  width: 200px;
-  margin: 20px auto;
-  padding: 15px;
+  font-family: "Yantramanav", sans-serif;
+  color: black;
+  width: 40%;
+  height: auto;
+  margin: 1% auto;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   background-color: white;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 30px 7px rgba(141, 141, 141, 0.25);
 }
 
 #sort_by {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-
-.add_button {
-  background-color: #1680f2;
-  border: none;
   border-radius: 40px;
-  color: white;
-  text-align: center;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 16px 32px;
-  font-size: 1.5rem;
+  border: none;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.2rem;
+  background-color: white;
+  margin: auto;
+  padding: 2%;
 }
 
-.add_button:hover {
-  opacity: 1;
+#sort_by:hover {
+  background-color: #95c2de;
+  color: white;
 }
 
 /* ARTICLE */
 .card_article {
   background-color: #ffffff;
-  margin: 10px auto;
+  color: black;
+  margin: 60px auto;
   padding: 20px;
-  width: 350px;
+  width: 50%;
   height: auto;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 30px 7px rgba(136, 136, 136, 0.25);
+
   cursor: pointer;
   transition: 0.4s;
 }
@@ -59,10 +55,13 @@
   font-size: 1.75rem;
   margin: auto;
   text-align: center;
+  color: black;
 }
 .card_article p {
+  font-family: "Yantramanav", sans-serif;
   font-size: 0.9rem;
   height: auto;
+  color: black;
 }
 
 #author {
@@ -73,29 +72,31 @@
 .card_article span {
   display: inline-block;
   padding: 0px 30px;
+  font-family: "Yantramanav", sans-serif;
+  color: black;
 }
 
 .card_article:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 30px 15px rgba(146, 146, 146, 0.25);
 }
 
 @media all and (max-width: 550px) {
   .card_article {
     /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
   }
 
   .sort_by {
     font-size: 1rem;
-    width: 150px;
+    width: 300px;
     margin: 30px auto;
-    padding: 10px;
+    margin-bottom: 10%;
+    padding: 0;
     background-color: white;
     border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-      -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 30px 7px rgba(138, 138, 138, 0.25);
   }
 
   .card_article h2 {
@@ -105,7 +106,7 @@
 
   .card_article p {
     font-size: 0.6rem;
-    height: 120px;
+    height: auto;
   }
 
   .card_article span {
@@ -124,6 +125,11 @@
   }
 }
 
+#sort_by {
+  margin: 5%;
+  font-size: 90%;
+}
+
 /* ARROWS */
 .arrow_button {
   background-color: #ffffff;
@@ -131,8 +137,7 @@
   width: 150px;
   height: 150px;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 30px 7px rgba(185, 185, 185, 0.25);
   cursor: pointer;
   transition: 0.4s;
   font-size: 5rem;
@@ -140,8 +145,7 @@
 
 .arrow_button:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 30px 15px rgba(165, 165, 165, 0.25);
 }
 
 @media all and (max-width: 500px) {
@@ -156,7 +160,6 @@
 
   .arrow_button:hover {
     transform: scale(0.4, 0.4);
-    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-      -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 30px 15px rgba(172, 172, 172, 0.25);
   }
 }

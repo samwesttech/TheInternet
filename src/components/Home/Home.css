@@ -1,12 +1,10 @@
-body {
-  background-color: #cdcfd2;
-}
-
 .card_home {
   background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
   margin: 30px auto;
-  width: 300px;
+  width: 400px;
   height: auto;
+  padding-bottom: 5%;
   border-radius: 40px;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
@@ -16,9 +14,18 @@ body {
   font-size: 1.5rem;
 }
 
+.card_home img {
+  height: 200px;
+  width: auto;
+}
+
 .card_home h1 {
   display: inline-block;
   vertical-align: middle;
+}
+
+.card_home h1:hover {
+  text-shadow: 5px 5px 30px #95c2de;
 }
 
 .card_home:hover {
@@ -28,8 +35,13 @@ body {
 }
 
 @media all and (max-width: 500px) {
-  .card-list {
+  .card_home {
     /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+    width: 80%;
+  }
+  .card_home:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+      -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
   }
 }

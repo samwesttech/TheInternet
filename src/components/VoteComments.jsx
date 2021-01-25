@@ -43,7 +43,7 @@ class VoteComments extends Component {
           <button onClick={() => this.handleClick(-1)} disabled={hasVoted}>
             ↓
           </button>
-          <p>Votes: {votes + vote_change}</p>
+          <p>🗳️: {votes + vote_change}</p>
         </div>
       );
     }

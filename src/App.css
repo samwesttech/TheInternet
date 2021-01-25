@@ -1,10 +1,11 @@
-/* font-family: "Raleway", sans-serif; */
+/* font-family: 'Roboto Slab', serif;
 
-/* font-family: 'Open Sans', sans-serif; */
+font-family: 'Yantramanav', sans-serif; */
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Slab", serif;
+  background-color: #95c2de;
 }
 
 .App {

@@ -7,9 +7,8 @@ const Home = () => {
   return (
     <Link to="/articles">
       <div className="card_home">
-        <h1>The Internet</h1>
+        <h1>Ask Me Anythings</h1>
         <img src={logo} alt="moose" />
-        <h2>Click to Enter!</h2>
         <br></br>
       </div>
     </Link>

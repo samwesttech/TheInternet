@@ -143,7 +143,11 @@ class Articles extends React.Component {
   render() {
     const { isLoading } = this.state;
     if (isLoading) {
-      return <p className="loader" />;
+      return (
+        <div className="err404">
+          <i class="far fa-question-circle fa-spin"></i>
+        </div>
+      );
     }
     const { articles, hasError, errorMessage, articleBody } = this.state;
     const selectedArticle = articles[this.state.selectedIndex];
@@ -153,18 +157,20 @@ class Articles extends React.Component {
       return (
         <div>
           <div className="sort_by">
-            <label>
-              Sort by:
-              <select onChange={this.handleChange} name="sort_by" id="sort_by">
-                <option value="created_at">created at</option>
-                <option value="comment_count">comment count</option>
-                <option value="votes">votes</option>
-              </select>
-            </label>
+            <button onClick={this.handleChange} id="sort_by" value="created_at">
+              Newest
+            </button>
+            <button
+              onClick={this.handleChange}
+              id="sort_by"
+              value="comment_count"
+            >
+              Most Active
+            </button>
+            <button onClick={this.handleChange} id="sort_by" value="votes">
+              Popular
+            </button>
           </div>
-          <Link to={`/articles/add_article`}>
-            <button className="add_button">Add New Article</button>
-          </Link>
           <Article>
             <button
               className="arrow_button"
@@ -184,10 +190,10 @@ class Articles extends React.Component {
                 />
                 <h2>{selectedArticle.title}</h2>
                 <p>{`${articleBody.slice(0, 200)} ...`}</p>
-                <span>Votes: {selectedArticle.votes}</span>
-                <span>Comments: {selectedArticle.comment_count}</span>
+                <span>🗳️: {selectedArticle.votes}</span>
+                <span>💬: {selectedArticle.comment_count}</span>
                 <br></br>
-                <p id="author">written by: {selectedArticle.author}</p>
+                <p id="author">✍️ {selectedArticle.author}</p>
               </Link>
             </div>
             <button

@@ -30,7 +30,7 @@ class DeleteArticle extends React.Component {
   render() {
     return (
       <button className="delete_button" onClick={this.DeleteArticle}>
-        Delete Article
+        Delete 🗑️
       </button>
     );
   }

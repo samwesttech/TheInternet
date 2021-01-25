@@ -28,7 +28,7 @@ class DeleteComment extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.DeleteComment}>Delete Comment</button>
+        <button onClick={this.DeleteComment}>Delete 🗑️</button>
       </div>
     );
   }
