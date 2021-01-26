@@ -12,10 +12,12 @@ class Nav extends Component {
   render() {
     return (
       <div className="header">
-        <Link to="/">
-          <img src={Logo} alt="the internet logo" className="logo" />
-          <h1>Home</h1>
-        </Link>
+        <div className="logo_and_home">
+          <Link to="/">
+            <img src={Logo} alt="the internet logo" className="logo" />
+            <h1>Home</h1>
+          </Link>
+        </div>
 
         <div className="header-right">
           <select
