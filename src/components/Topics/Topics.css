@@ -48,4 +48,8 @@
   p {
     font-size: 65%;
   }
+
+  .card_topics {
+    width: 80%;
+  }
 }
